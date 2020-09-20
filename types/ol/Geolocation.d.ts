@@ -74,7 +74,7 @@ export default class Geolocation extends BaseObject {
     un(type: 'propertychange', listener: (evt: ObjectEvent) => void): void;
 }
 declare class GeolocationError extends BaseEvent {
-    constructor(error: GeolocationPositionError);
+    constructor(error: PositionError);
     code: number;
     message: string;
 }
